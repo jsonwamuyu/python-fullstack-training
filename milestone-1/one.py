@@ -12,15 +12,15 @@ class PersonTwo:
         self.age = age
 
     def greet(self):
-        print(f'Hello, {self.full_name}. You are {self.age} years old.')
-        print('Hello, ' + self.full_name + '. You are ', str(self.age), 'years old.' )
+        print(f"Hello, {self.full_name}. You are {self.age} years old.")
+        print("Hello, " + self.full_name + ". You are ", str(self.age), "years old.")
 
 
 # Call function.
 say_hello()
 
 
-p = PersonTwo('Alice King', 23)
+p = PersonTwo("Alice King", 23)
 p.greet()
 
 
@@ -30,12 +30,13 @@ class Car:
         self.brand = brand
 
     def drive(self):
-        print(f'{self.brand} is driving')
+        print(f"{self.brand} is driving")
 
-benz = Car('Benz', 1990)
+
+benz = Car("Benz", 1990)
 benz.drive()
 
-my_car = Car('Toyota',2001)
+my_car = Car("Toyota", 2001)
 my_car.drive()
 
 # Write a Python program that:
@@ -48,14 +49,16 @@ my_car.drive()
 #
 # 💡 Bonus: If the user is under 18, print "You are a minor." Otherwise, "You are an adult."
 
+
 def print_user_name_age():
-    name = str(input('Enter your name: '))
-    age = int(input('Enter your age: '))
-    print(f'Your name is {name} and age is {age*12} months.')
-    if age < 18 :
-        print('You are minor')
-    else :
-        print('You are an adult')
+    name = str(input("Enter your name: "))
+    age = int(input("Enter your age: "))
+    print(f"Your name is {name} and age is {age*12} months.")
+    if age < 18:
+        print("You are minor")
+    else:
+        print("You are an adult")
+
 
 print_user_name_age()
 
@@ -70,6 +73,7 @@ print_user_name_age()
 #                   If the user is a minor, print: "You are a minor."
 #                   Otherwise, print: "You are an adult."
 
+
 class Person:
     """Represents a person with name and age."""
 
@@ -80,7 +84,8 @@ class Person:
 
     def greet(self):
         """Greets the user with name and age."""
-        print(f'Hi, my name is {self.name} and I am {self.age} years old.')
+        print(f"Hi, my name is {self.name} and I am {self.age} years old.")
+
 
 emoji = "😊"
 print(emoji)
@@ -89,8 +94,13 @@ print(type(emoji))
 
 def hello():
     """The doc string should not exceed 79 characters."""
-    name = input('Enter your name: ')
-    print(f'Hello {name}')
+    name = input("Enter your name: ")
+    print(f"Hello {name}")
+
 
 hello()
 
+
+def connect_database(greetings=None):
+    print("Connected to database")
+    return greetings
