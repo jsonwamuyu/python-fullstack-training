@@ -1,3 +1,29 @@
+import os
+import sys
+
+
+def say_hello(name="World"):
+    print("Hello," + name)
+
+
+class PersonTwo:
+    def __init__(self, full_name, age):
+        self.full_name = full_name
+        self.age = age
+
+    def greet(self):
+        print(f'Hello, {self.full_name}. You are {self.age} years old.')
+        print('Hello, ' + self.full_name + '. You are ', str(self.age), 'years old.' )
+
+
+# Call function.
+say_hello()
+
+
+p = PersonTwo('Alice King', 23)
+p.greet()
+
+
 class Car:
     def __init__(self, brand, year):
         self.year = year
@@ -55,3 +81,16 @@ class Person:
     def greet(self):
         """Greets the user with name and age."""
         print(f'Hi, my name is {self.name} and I am {self.age} years old.')
+
+emoji = "😊"
+print(emoji)
+print(type(emoji))
+
+
+def hello():
+    """The doc string should not exceed 79 characters."""
+    name = input('Enter your name: ')
+    print(f'Hello {name}')
+
+hello()
+
