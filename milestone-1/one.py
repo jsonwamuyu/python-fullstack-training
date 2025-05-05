@@ -1,17 +1,43 @@
-import os
-import sys
+"""Learning and practicing python."""
+
+# import os
+# import sys
+
+# OPERATORS
+
+NUM_ONE = 5
+NUM_TWO = 2
+# Arithmetics operators - performs mathematical computations
+print("Addition: ", NUM_ONE + NUM_TWO)
+print("Subtraction: ", NUM_ONE - NUM_TWO)
+print("Division:", NUM_ONE / NUM_TWO)
+print("Floor division: ", NUM_ONE // NUM_TWO)
+print("Multiplication:", NUM_ONE * NUM_TWO)
+print("Modulus: ", NUM_ONE % NUM_TWO)
+print("Exponential: ", NUM_ONE**NUM_TWO)
 
 
 def say_hello(name="World"):
+    """Print a hello message with name"""
+
     print("Hello," + name)
 
 
 class PersonTwo:
+    """Create Person object with name and age."""
+
     def __init__(self, full_name, age):
         self.full_name = full_name
         self.age = age
 
+    def person_details(self):
+        """Print person details"""
+
+        print(f"Fullname: {self.full_name}, Age: {self.age}")
+
     def greet(self):
+        """Greet person with fullname and age."""
+
         print(f"Hello, {self.full_name}. You are {self.age} years old.")
         print("Hello, " + self.full_name + ". You are ", str(self.age), "years old.")
 
@@ -25,11 +51,17 @@ p.greet()
 
 
 class Car:
+    """Define Car object with brand and year."""
+
     def __init__(self, brand, year):
         self.year = year
         self.brand = brand
 
+    def __str__(self):
+        pass
+
     def drive(self):
+        """Print brand driving."""
         print(f"{self.brand} is driving")
 
 
@@ -51,6 +83,8 @@ my_car.drive()
 
 
 def print_user_name_age():
+    """Prompt user for name and age - print them."""
+
     name = str(input("Enter your name: "))
     age = int(input("Enter your age: "))
     print(f"Your name is {name} and age is {age*12} months.")
@@ -69,7 +103,8 @@ print_user_name_age()
 #       Method: greet() that prints: "Hi, my name is <name> and I am <age> years old."
 #       Asks the user to input their name and age.
 #           Instantiates a Person object and calls the greet() method.
-#           Adds a function is_minor() that checks if the person is under 18, returning True or False.
+#           Adds a function is_minor() that checks if the person is
+#           under 18, returning True or False.
 #                   If the user is a minor, print: "You are a minor."
 #                   Otherwise, print: "You are an adult."
 
@@ -82,14 +117,17 @@ class Person:
         self.name = name
         self.age = age
 
+    def __str__(self):
+        pass
+
     def greet(self):
         """Greets the user with name and age."""
         print(f"Hi, my name is {self.name} and I am {self.age} years old.")
 
 
-emoji = "😊"
-print(emoji)
-print(type(emoji))
+EMOJI = "😊"
+print(EMOJI)
+print(type(EMOJI))
 
 
 def hello():
@@ -102,5 +140,6 @@ hello()
 
 
 def connect_database(greetings=None):
+    """Establish database connection."""
     print("Connected to database")
     return greetings
