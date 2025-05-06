@@ -36,6 +36,14 @@ print('Greater or equal to: ',NUM_ONE >= NUM_ONE)
 print('Less or equal to: ', NUM_ONE <= NUM_TWO)
 
 
+# Logical operators
+# Combine conditional statements - By performing LOGICAL AND, OR, NOT.
+IS_TRUE = True
+IS_FALSE = False
+print('Logical AND:', IS_TRUE and IS_FALSE)
+print('Logical OR: ', IS_TRUE or IS_FALSE)
+print('Logical NOT:', not IS_FALSE) # Negating the value
+
 
 def say_hello(name="World"):
     """Print a hello message with name"""
