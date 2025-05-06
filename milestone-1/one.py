@@ -20,30 +20,74 @@ print("Exponential: ", NUM_ONE**NUM_TWO)
 # The double division operator (//) in Python 3 returns the floor
 # value for both integer and floating-point arguments after division.
 
-print('Double division operator: ', 7//3)
-print('Single division operator: ', 7/3)
+print("Double division operator: ", 7 // 3)
+print("Single division operator: ", 7 / 3)
 
 
 # Comparison or Relational Operator.
 # compare values and returns a boolean value (True or False)
 # according to the condition.
 
-print('Greater than: ', NUM_ONE > NUM_TWO)
-print('Less than: ', NUM_ONE < NUM_TWO)
-print('Equal to: ', NUM_ONE == NUM_TWO)
-print('Not equal to: ', NUM_ONE != NUM_TWO)
-print('Greater or equal to: ',NUM_ONE >= NUM_ONE)
-print('Less or equal to: ', NUM_ONE <= NUM_TWO)
+print("Greater than: ", NUM_ONE > NUM_TWO)
+print("Less than: ", NUM_ONE < NUM_TWO)
+print("Equal to: ", NUM_ONE == NUM_TWO)
+print("Not equal to: ", NUM_ONE != NUM_TWO)
+print("Greater or equal to: ", NUM_ONE >= NUM_TWO)
+print("Less or equal to: ", NUM_ONE <= NUM_TWO)
 
 
 # Logical operators
 # Combine conditional statements - By performing LOGICAL AND, OR, NOT.
 IS_TRUE = True
 IS_FALSE = False
-print('Logical AND:', IS_TRUE and IS_FALSE)
-print('Logical OR: ', IS_TRUE or IS_FALSE)
-print('Logical NOT:', not IS_FALSE) # Negating the value
+print("Logical AND:", IS_TRUE and IS_FALSE)
+print("Logical OR: ", IS_TRUE or IS_FALSE)
+print("Logical NOT: (Negate)", not IS_FALSE)  # Negating the value.
+print("Logical NOT: ", not IS_TRUE)  # False
 
+
+# Bitwise operators
+# Act on bits and perform bit-by-bit operations.
+# These are used to operate on binary numbers.
+
+# TODO
+
+
+# Assignment operator
+# Assign values to variables - assign the value of the right side
+# of the expression to the left side operand
+
+a=10
+print('a should be 10', a)
+b=a
+print('b is now assigned to value of a which is 10 ', b)
+print('a id is: ', id(a))
+print('b id is: ', id(b))
+
+print('Is a and b id the same: ',id(a) == id(a))
+
+a = 45
+print('Now a is reassigned to 45', a)
+print(f'b is {b} after reassigning a')
+
+print('does a still have the same id as b', id(a) == id(b))
+
+# "is" for identity operator(checks whether they point to the same object)
+# while "==" is for equality operator(compare the object content)
+
+my_list = [1,2,3,4]
+my_list_two = my_list
+# They both point to the same object
+
+my_list.append(5)
+# Now you are changing the object content(mutating)
+# which will also update my_list_two
+
+my_list = [1,3,4]
+# This now will reassign myList to point to a new object
+# and the original object remains intact
+
+# Special operators
 
 def say_hello(name="World"):
     """Print a hello message with name"""
