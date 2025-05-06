@@ -17,6 +17,26 @@ print("Modulus: ", NUM_ONE % NUM_TWO)
 print("Exponential: ", NUM_ONE**NUM_TWO)
 
 
+# The double division operator (//) in Python 3 returns the floor
+# value for both integer and floating-point arguments after division.
+
+print('Double division operator: ', 7//3)
+print('Single division operator: ', 7/3)
+
+
+# Comparison or Relational Operator.
+# compare values and returns a boolean value (True or False)
+# according to the condition.
+
+print('Greater than: ', NUM_ONE > NUM_TWO)
+print('Less than: ', NUM_ONE < NUM_TWO)
+print('Equal to: ', NUM_ONE == NUM_TWO)
+print('Not equal to: ', NUM_ONE != NUM_TWO)
+print('Greater or equal to: ',NUM_ONE >= NUM_ONE)
+print('Less or equal to: ', NUM_ONE <= NUM_TWO)
+
+
+
 def say_hello(name="World"):
     """Print a hello message with name"""
 
