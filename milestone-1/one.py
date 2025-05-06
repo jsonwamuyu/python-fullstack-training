@@ -85,9 +85,26 @@ my_list.append(5)
 
 my_list = [1,3,4]
 # This now will reassign myList to point to a new object
-# and the original object remains intact
+# and the original object remains intact.
 
 # Special operators
+# 1. Identity operators-( is and is not)
+# checks whether they point to the same object in the memory.
+# ( checks whether the point to the same memory address.)
+# "is" returns True if they point to the same memory address
+# while "is not" returns True is they do not point to the same memory address.
+fruits = ['oranges', 'Apples', 'banana', 'kiwi']
+fruits_two = fruits
+
+print('Check their identity', fruits is fruits_two)
+print('Check their identity', fruits is not fruits_two)
+
+
+# 2. Membership operators (in , not in)
+# test whether a value/variable is present in a sequence(list, dic).
+print('banana' in fruits) # True
+print('Mango' in fruits) # False
+
 
 def say_hello(name="World"):
     """Print a hello message with name"""
