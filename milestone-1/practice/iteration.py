@@ -32,6 +32,9 @@ for num in range(10):
 
 my_numbers = [23, 56, 45, 67, 44]
 
+count = 0
+while count < 10:
+    print("#")
 
 age = int(input('Enter your age: '))
 if age < 18:
