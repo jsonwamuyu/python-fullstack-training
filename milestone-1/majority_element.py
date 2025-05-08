@@ -13,17 +13,17 @@ def majority_element(nums):
 
     # This hold the number of count(s) for each element in nums
     counts = {}
-    appear_times = len(nums) // 2
+    appear_times = len(nums) / 2
 
     # loop through the nums while updating the counts for each element
     for num in nums:
         counts[num] = counts.get(num, 0) + 1
-        if counts[num] > appear_times:
+        if counts[num] >= appear_times:
             return num
     return None
 
 
-print(majority_element([2]))
-print(majority_element([2, 3, 5, 6, 6, 7, 2]))
-
+print(majority_element([2,4,4,4,5])) # 4
+print(majority_element([2, 3, 2, 2,5, 6, 7, 2]))
+print(majority_element([2,2,1,1,1])) # 2
 # majority_element([])
