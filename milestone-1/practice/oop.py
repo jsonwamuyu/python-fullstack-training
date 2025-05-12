@@ -36,9 +36,14 @@ print(mike.person_details())
 class Employee(Person):
     """Inherit from Person class."""
 
-    def __init__(self, name, age, employee_id):
+    def __init__(self, name, age, employee_id, emp_title):
         super().__init__(name, age)
         self.employee_id = employee_id
+        self.emp_title = emp_title
 
     def employee_details(self):
-        return f'Name: {self.name} Age:{self.age} EmployeeId: {self.employee_id}'
+        return f'Name: {self.name} Age:{self.age} EmployeeId: {self.employee_id} Title: {self.emp_title}'
+
+staff = Employee('Jana Doe', 32, 'KLM233', 'Secretary')
+print(staff.employee_details())
+
