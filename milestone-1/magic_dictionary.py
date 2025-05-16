@@ -14,7 +14,8 @@ class MagicDictionary:
         count = 0
         for word in self.words:
             if len(word) == len(search_term):
-                # Compare characters in both words and see whether there's exactly one letter that is different.
+                #Loop through comparing characters in both words and see whether there's
+                # exactly one letter that is different. If not break from comparing.
                 for char in range(len(word)):
                     if word[char] != search_term[char]:
                         count += 1
